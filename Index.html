@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Loja Online</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f9fa;
+}
+
+header{
+background:linear-gradient(90deg,#009688,#1565C0);
+color:#fff;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:10px;
+}
+
+.emola{
+background:#fff;
+margin:20px;
+padding:20px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.numero{
+font-size:25px;
+font-weight:bold;
+color:#1565C0;
+margin:15px 0;
+}
+
+button{
+background:#009688;
+color:#fff;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#00796B;
+}
+
+.produtos{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:20px;
+
+}
+
+.card{
+
+width:320px;
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.card img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+
+}
+
+.info{
+
+padding:20px;
+
+}
+
+.preco{
+
+font-size:30px;
+color:#1565C0;
+font-weight:bold;
+margin:10px 0;
+
+}
+
+.comprar{
+
+width:100%;
+margin-top:15px;
+
+}
+
+footer{
+
+margin-top:40px;
+background:#1565C0;
+color:#fff;
+text-align:center;
+padding:20px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+text-decoration:none;
+color:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Minha Loja</h1>
+
+<p>Produtos de qualidade</p>
+
+</header>
+
+<div class="emola">
+
+<h2>Pagamento via Emola</h2>
+
+<div class="numero" id="numero">
+875743692
+</div>
+
+<button onclick="copiar()">
+Copiar Número
+</button>
+
+</div>
+
+<div class="produtos">
+
+<div class="card">
+
+<img src="produto1.jpg">
+
+<div class="info">
+
+<h2>Produto 1</h2>
+
+<p>Descrição do produto.</p>
+
+<div class="preco">
+250 MT
+</div>
+
+<button class="comprar">
+Comprar
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="produto2.jpg">
+
+<div class="info">
+
+<h2>Produto 2</h2>
+
+<p>Descrição do produto.</p>
+
+<div class="preco">
+500 MT
+</div>
+
+<button class="comprar">
+Comprar
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Todos os Direitos Reservados
+
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/258875743692"
+target="_blank">
+
+💬
+
+</a>
+
+<script>
+
+function copiar(){
+
+navigator.clipboard.writeText("875743692");
+
+alert("Número copiado!");
+
+}
+
+</script>
+
+</body>
+  </html>
